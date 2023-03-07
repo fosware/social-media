@@ -1,6 +1,9 @@
 import Card from "./Card";
+import {useRouter} from "next/router";
 
 export default function NavigationCard() {
+  const router = useRouter();
+  console.log({router});
   const activeElement = 'flex gap-3 py-3 bg-socialBlue text-white -mx-10 px-10 rounded-md shadow-md shadow-gray-300';
   const nonActiveElement = 'flex gap-3 py-2 my-2 hover:bg-blue-500 hover:bg-opacity-20 -mx-4 px-4 rounded-md transistion-all hover:scale-110 hover:shadow-md shadow-gray-300';
   return (
