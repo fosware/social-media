@@ -2,8 +2,8 @@ export default function Avatar({size}){
   let imgSizeW = 'w-12';
   let imgSizeH = 'h-12';
   if (size === 'lg') {
-    imgSizeW = 'w-36';
-    imgSizeH = 'h-36';
+    imgSizeW = 'w-24 md:w-36';
+    imgSizeH = 'h-24 md:h-36';
   }
     return(
         <div className={` ${imgSizeW} rounded-full overflow-hidden`}>
